@@ -1,0 +1,12 @@
+CREATE TABLE livros (
+   id INTEGER NOT NULL AUTO_INCREMENT,
+   nome VARCHAR(50) NOT NULL,
+   genero VARCHAR(1) NOT NULL,
+   diretor VARCHAR(50) NOT NULL,
+   atores VARCHAR(50) NOT NULL,
+   autores VARCHAR(50) NOT NULL,
+   bas_fatosreais VARCHAR(10) NOT NULL,
+   dt_lancamento DATE NOT NULL,
+
+CONSTRAINT pk_livros PRIMARY KEY (id)
+);
