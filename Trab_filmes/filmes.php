@@ -100,27 +100,32 @@ if (isset($_POST['submetido'])) {
         </select><br><br>
 
 
-        <input type="text" name="diretor" placeholder="Informe o diretor" id="diretor" />
+        <input type="text" name="diretor" placeholder="Informe o diretor" id="diretor" 
+        value="<?php echo"$diretor"?>"/>
         <br><br>
 
-        <input type="text" name="atores" placeholder="Informe os atores" id="atores" />
+        <input type="text" name="atores" placeholder="Informe os atores" id="atores"
+        value="<?php echo"$atores"?>" />
         <br><br>
 
-        <input type="text" name="autor" placeholder="Informe o nome dos autores" id="autor" />
+        <input type="text" name="autor" placeholder="Informe o nome dos autores" id="autor" 
+        value="<?php echo"$autores"?>"/>
         <br><br>
 
-        <input type="date" name="dt_lancamento" id="dtLanc">
-        <br><br>
+        <input type="date" name="dt_lancamento" id="dtLanc" value="<?php echo"$dtLanc"?>"/>  <br><br>
+     
 
 
 
 
         <legend>Baseado em fatos reais</legend>
-        <input type="radio" name="bas_fatosreais" id="bsFR" value="sim" />
+        <input type="radio" name="bas_fatosreais" id="bsFR" value="sim"
+        value="S"<?php echo($bsFR == 'sim' ? 'checked' : '');?> />
         <label for="bsr">Sim</label>
         <br>
 
-        <input type="radio" name="bas_fatosreais" id="bsr2" value="nao" />
+        <input type="radio" name="bas_fatosreais" id="bsr2" value="nao"
+        value="N"<?php echo($bsFR == 'nao' ? 'checked' : '');?> />
         <label for="bsr2">Não</label>
         <br><br>
 
