@@ -82,7 +82,7 @@ if (isset($_POST['submetido'])) {
 
 
                 <select name="genero" id="genero">
-                    <option value="">---Selecione o gênero---</option>
+                    <option value="">-- Selecione o gênero --</option>
 
                     <option value="C" <?php echo ($genero == 'C' ? 'selected' : ''); ?>>Comédia</option>
                     <option value="A" <?php echo ($genero == 'A' ? 'selected' : ''); ?>>Animação</option>
@@ -190,7 +190,7 @@ if (isset($_POST['submetido'])) {
     ?>
 
     <div class="direita">
-        <table border="1" cellpadding=5 cellspacing=10>
+        <table border="1" cellpadding=5>
             <tr class="tt">
                 <td>Id</td>
                 <td>Nome</td>

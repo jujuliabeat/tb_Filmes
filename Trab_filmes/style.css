@@ -5,8 +5,13 @@
 
 body{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/536/590/457/texture-background-text-symbols-wallpaper-preview.jpg");
+    background-size:30%;
+    margin: 50px;
 }
 
 
@@ -186,7 +191,12 @@ form{
 
 
 /* TABELA */
-
+.direita{
+  margin: 30px;
+  margin-top: 0%;
+  padding: 0.65rem;
+  border-radius: 0.75rem;
+}
 table{
   box-shadow: 0 5px 10px rgba(0,0,0,.6);
   border-radius: 0.75rem;
@@ -197,12 +207,12 @@ table{
   border-spacing: 0 8px;
   margin-top: -8px;
   text-align: center;
-  
+  border-spacing: 10px;
+  border: none;
 }
   table td{
     border: none;
     border-right: 1px solid #fff;
-    border-left-width: 0;
     height: 20px;
 
   }
@@ -210,6 +220,7 @@ table{
         color: var(--segunda);
         border-bottom: 1px solid #fff;
     }
+
 a{
   text-decoration: none;
   color: var(--primeira);
