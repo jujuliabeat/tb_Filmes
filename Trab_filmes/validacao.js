@@ -41,8 +41,14 @@ function validarFilme() {
         return false;
     }
 
-
-
-
     return false;
 }
+
+
+// Validar cadastro
+// var mensagem = document.getElementById('mensagem');
+
+// function clicou(){
+
+//     mensagem.innerText = "Eaeerr....";
+// }
