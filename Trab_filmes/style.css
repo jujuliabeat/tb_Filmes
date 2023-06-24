@@ -28,9 +28,33 @@ form{
   
   .form {
     margin-top: 1.5rem;
-    display: inline;
+    display:inline-block;
   }
+
+  /*Inputs*/
+
     .form input{
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      margin: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+      box-shadow: 0 5px 10px rgba(0,0,0,.6);
+    }
+      .form input:focus-visible{
+        top: -20px;
+        left: 0;
+        color: #bdb8b8;
+        font-size: 12px;
+      }
+
+/* Select  */
+
+.form select{
       padding: 10px;
       font-size: 16px;
       color: #fff;
@@ -39,12 +63,19 @@ form{
       border: none;
       border-bottom: 1px solid #fff;
       outline: none;
-      background: transparent;
+      background: rgba(17, 24, 39, 1);
+      box-shadow: 0 5px 10px rgba(0,0,0,.6);
+}
+    .form select option{
+      margin: 4px;
+      padding: 5px;
     }
-  /* Teste */ 
+
+  /* Radio */ 
 
 .base{
    padding: 10px;
+   border-bottom: 1px solid #fff;
 }
   .base legend{
     text-align: start;
@@ -61,32 +92,6 @@ form{
     .base label{
       padding: 6px;
     }
-
-  /*Inputs*/
-  /*
-  .user-box {
-    position: relative;
-  }
-    .user-box input {
-        width: 100%;
-        padding: 10px 0;
-        font-size: 16px;
-        color: #fff;
-        margin-bottom: 30px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        outline: none;
-        background: transparent;
-    }  
-        .user-box input:focus {
-            border-color: rgba(167, 139, 250);
-            top: -20px;
-            left: 0;
-            color: #bdb8b8;
-            font-size: 12px;
-        } */
-
-    /*Radio */
 
     
    /* Parte de baixo*/

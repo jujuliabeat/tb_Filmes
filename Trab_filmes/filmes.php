@@ -70,7 +70,7 @@ if (isset($_POST['submetido'])) {
 
 <body>
 
-    <div class="form-container">
+<div class="form-container">
         <p class="title">Filmes</p>
 
         <!-- Campos do Formulário-->
@@ -78,58 +78,46 @@ if (isset($_POST['submetido'])) {
 
 
         <form action="" method="post" class="form">
- 
-                            <input type="text" name="nome" placeholder="Informe o nome" id="nome" value="<?php echo "$nome" ?>">
-                        <!-- </div> -->
 
-                    <!-- <div class="user-box"> -->
-                        <select name="genero" id="genero">
-                            <option value="">---Selecione o gênero---</option>
-
-                            <option value="C" <?php echo ($genero == 'C' ? 'selected' : ''); ?>>Comédia</option>
-                            <option value="A" <?php echo ($genero == 'A' ? 'selected' : ''); ?>>Animação</option>
-                            <option value="D" <?php echo ($genero == 'D' ? 'selected' : ''); ?>>Drama</option>
-                            <option value="F" <?php echo ($genero == 'F' ? 'selected' : ''); ?>>Ficção</option>
-                            <option value="R" <?php echo ($genero == 'R' ? 'selected' : ''); ?>>Romance</option>
-                            <option value="S" <?php echo ($genero == 'S' ? 'selected' : ''); ?>>Suspense</option>
-                            <option value="T" <?php echo ($genero == 'T' ? 'selected' : ''); ?>>Terror</option>
-                            <option value="O" <?php echo ($genero == 'O' ? 'selected' : ''); ?>>Outros</option>
-                        </select>
-                    <!-- </div> -->
-                    <br><br>
-                    <!-- <div class="user-box"> -->
-                        <input type="text" name="diretor" placeholder="Informe o diretor" id="diretor" value="<?php echo "$diretor" ?>" />
+            <input type="text" name="nome" placeholder="Informe o nome" id="nome" value="<?php echo "$nome" ?>">
 
 
+            <select name="genero" id="genero">
+                <option value="">---Selecione o gênero---</option>
 
-                    <!-- <div class="user-box"> -->
-                        <input type="text" name="atores" placeholder="Informe os atores" id="atores" value="<?php echo "$atores" ?>" />
+                <option value="C" <?php echo ($genero == 'C' ? 'selected' : ''); ?>>Comédia</option>
+                <option value="A" <?php echo ($genero == 'A' ? 'selected' : ''); ?>>Animação</option>
+                <option value="D" <?php echo ($genero == 'D' ? 'selected' : ''); ?>>Drama</option>
+                <option value="F" <?php echo ($genero == 'F' ? 'selected' : ''); ?>>Ficção</option>
+                <option value="R" <?php echo ($genero == 'R' ? 'selected' : ''); ?>>Romance</option>
+                <option value="S" <?php echo ($genero == 'S' ? 'selected' : ''); ?>>Suspense</option>
+                <option value="T" <?php echo ($genero == 'T' ? 'selected' : ''); ?>>Terror</option>
+                <option value="O" <?php echo ($genero == 'O' ? 'selected' : ''); ?>>Outros</option>
 
-                    <!-- </div> -->
+            </select>
+            <br><br>
 
-                    <br><br>
-
-                <!-- <div class="user-box"> -->
-                    <input type="text" name="autor" placeholder="Informe o nome dos autores" id="autor" value="<?php echo "$autores" ?>" />
-
-                <!-- </div> -->
-                
-
-                <input type="date" name="dt_lancamento" id="dtLanc" value="<?php echo "$dtLanc" ?>" /> <br><br>
+            <input type="text" name="diretor" placeholder="Informe o diretor" id="diretor" value="<?php echo "$diretor" ?>" />
+            <input type="text" name="atores" placeholder="Informe os atores" id="atores" value="<?php echo "$atores" ?>" />
+            <br><br>
 
 
-                <div class="base">
-                    <legend>Baseado em fatos reais</legend>
+            <input type="text" name="autor" placeholder="Informe o nome dos autores" id="autor" value="<?php echo "$autores" ?>" />
+            <input type="date" name="dt_lancamento" id="dtLanc" value="<?php echo "$dtLanc" ?>" /> <br><br>
+
+
+            <div class="base">
+                <legend>Baseado em fatos reais</legend>
                     <input type="radio" name="bas_fatosreais" id="bsFR" value="sim" value="S" <?php echo ($bsFR == 'sim' ? 'checked' : ''); ?> />
                     <label for="bsr">Sim</label>
                     <br>
 
                     <input type="radio" name="bas_fatosreais" id="bsr2" value="nao" value="N" <?php echo ($bsFR == 'nao' ? 'checked' : ''); ?> />
                     <label for="bsr2">Não</label>
-                    <br><br>
-                </div>
-    </div>
-            
+                <br><br>
+            </div>
+
+
 
             <!-- Mensagem de Erro-->
 
@@ -148,6 +136,9 @@ if (isset($_POST['submetido'])) {
 
             <button class="sign" type="submit">Cadastrar</button>
         </form>
+
+            <!-- Icons de baixo -->
+
         <div class="social-message">
             <div class="line"></div>
             <p class="message">Entrar com contas sociais</p>
@@ -176,9 +167,9 @@ if (isset($_POST['submetido'])) {
 
         </form>
 
-
     </div>
-    </span>
+</div>
+
 
 
 
