@@ -15,7 +15,7 @@
                         //Define o tipo do erro como exceção
                         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
     
-                    self::$conn = new PDO('mysql:host=localhost;dbname=dbFilmes',"root", "bancodedados", $opcoes);
+                    self::$conn = new PDO('mysql:host=localhost;dbname=dbFilmes',"root", "", $opcoes);
     
                     // print_r($connect);
 
