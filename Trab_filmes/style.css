@@ -11,24 +11,59 @@ form{
 }
 
 .form-container {
-    width: 320px;
     border-radius: 0.75rem;
     background-color: rgba(17, 24, 39, 1);
     padding: 2rem;
     color: rgba(243, 244, 246, 1);
+    display: inline;
+
   }
-  .title {
+
+.title {
     text-align: center;
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 700;
-  }
+}
   
   .form {
     margin-top: 1.5rem;
+    display: inline;
   }
+    .form input{
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      margin: 10px;
+      margin-bottom: 30px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none;
+      background: transparent;
+    }
+  /* Teste */ 
+
+.base{
+   padding: 10px;
+}
+  .base legend{
+    text-align: start;
+    padding: 5px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  .base input{
+    text-align: start;
+    
+  }
+    .base label{
+      padding: 6px;
+    }
 
   /*Inputs*/
+  /*
   .user-box {
     position: relative;
   }
@@ -49,7 +84,7 @@ form{
             left: 0;
             color: #bdb8b8;
             font-size: 12px;
-        }
+        } */
 
     /*Radio */
 
